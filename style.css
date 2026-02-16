@@ -1,11 +1,11 @@
-/* Reset */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fundo do site */
+/* FUNDO DO SITE */
 body {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -23,17 +23,17 @@ body {
     padding: 20px;
 }
 
-/* Container central */
+/* CONTAINER */
 .container {
     max-width: 1200px;
     margin: auto;
 }
 
-/* Título principal */
+/* TITULO PRINCIPAL */
 .titulo {
     text-align: center;
     font-size: 42px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 
     color: #00ff88;
 
@@ -43,22 +43,19 @@ body {
         0 0 30px #00ff88;
 }
 
-/* GRID PC */
+/* GRID = SEMPRE VERTICAL */
 .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
     gap: 25px;
 }
 
-/* MOBILE = um embaixo do outro */
-@media (max-width: 900px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-/* Cards */
+/* CARDS */
 .box {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+
     background: rgba(0,0,0,0.55);
     padding: 25px;
     border-radius: 15px;
@@ -73,14 +70,14 @@ body {
     transition: 0.3s;
 }
 
-/* Hover gamer */
+/* HOVER */
 .box:hover {
     transform: translateY(-5px);
     box-shadow:
-        0 0 20px rgba(0,255,136,0.5);
+        0 0 25px rgba(0,255,136,0.6);
 }
 
-/* Sub títulos */
+/* SUB TITULOS */
 h2 {
     color: #00ff88;
     margin-bottom: 15px;
@@ -88,19 +85,19 @@ h2 {
     text-shadow: 0 0 10px #00ff88;
 }
 
-/* Textos */
+/* TEXTOS */
 p, li {
     color: #d0ffe9;
     font-size: 16px;
     line-height: 1.6;
 }
 
-/* Lista */
+/* LISTAS */
 ul {
     margin-left: 20px;
 }
 
-/* Links */
+/* LINKS */
 a {
     color: #00ff88;
     text-decoration: none;
@@ -111,7 +108,7 @@ a:hover {
     text-shadow: 0 0 10px #00ff88;
 }
 
-/* Redes sociais */
+/* REDES SOCIAIS */
 .social-links {
     margin-top: 15px;
     display: flex;
