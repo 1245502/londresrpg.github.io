@@ -1,0 +1,23 @@
+body {
+    background: black;
+    color: #39ff14;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 0 0 15px #39ff14;
+}
+
+button {
+    background: transparent;
+    border: 2px solid #39ff14;
+    color: #39ff14;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #39ff14;
+    color: black;
+}
