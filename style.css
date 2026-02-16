@@ -3,7 +3,7 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /* FUNDO DO SITE */
@@ -11,93 +11,94 @@ body{
     color:white;
     background:
     linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
-    url("Image.jpg");
+    url("image.jpg");
     background-size:cover;
     background-position:center;
     background-attachment:fixed;
-    min-height:100vh;
 }
 
-/* TITULO */
+/* TÍTULO */
 h1{
     text-align:center;
-    margin-top:25px;
-    margin-bottom:25px;
-    color:#00ff9c;
+    margin-top:40px;
+    margin-bottom:40px;
+    color:#00ff88;
     text-shadow:
-    0 0 5px #00ff9c,
-    0 0 15px #00ff9c,
-    0 0 30px #00ff9c;
+    0 0 5px #00ff88,
+    0 0 10px #00ff88,
+    0 0 20px #00ff88;
 }
 
 /* CONTAINER PRINCIPAL */
 .container{
-    display:flex;
-    flex-direction:column; /* UM EMBAIXO DO OUTRO */
-    align-items:center;
-    gap:25px;
-    padding:20px;
-}
-
-/* CARDS */
-.card{
     width:90%;
     max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column; /* <<< UM EMBAIXO DO OUTRO */
+    gap:25px;
+    padding-bottom:60px;
+}
 
-    background:rgba(0,0,0,0.65);
+/* CAIXAS */
+.box{
+    background:rgba(0,0,0,0.75);
+    border:1px solid #00ff88;
     border-radius:15px;
     padding:20px;
 
-    border:1px solid rgba(0,255,156,0.5);
-
     box-shadow:
-    0 0 10px rgba(0,255,156,0.5),
-    inset 0 0 10px rgba(0,255,156,0.3);
-
-    backdrop-filter:blur(6px);
+    0 0 10px rgba(0,255,136,0.5);
 }
 
-/* TITULO CARD */
-.card h2{
-    color:#00ff9c;
+/* TITULO DAS CAIXAS */
+.box h2{
+    color:#00ff88;
     margin-bottom:15px;
-    text-shadow:0 0 8px #00ff9c;
 }
 
 /* TEXTO */
-.card p{
+.box p{
+    color:#ddd;
+    font-size:14px;
     line-height:1.6;
-    margin-bottom:10px;
 }
 
 /* LISTA */
-.card ul{
-    margin-left:20px;
+.box ul{
     margin-top:10px;
+    margin-left:18px;
 }
 
-.card li{
+.box li{
     margin-bottom:6px;
 }
 
 /* LINKS */
-.card a{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    color:#00ff9c;
+a{
+    color:#00ff88;
     text-decoration:none;
-    margin-top:8px;
     font-weight:bold;
-    transition:0.3s;
 }
 
-.card a:hover{
-    text-shadow:0 0 10px #00ff9c;
+a:hover{
+    text-shadow:0 0 8px #00ff88;
 }
 
-/* ICONES */
+/* ÍCONES */
 .icon{
-    width:24px;
-    height:24px;
+    width:22px;
+    vertical-align:middle;
+    margin-right:8px;
+}
+
+/* RESPONSIVO */
+@media (max-width:600px){
+    h1{
+        font-size:22px;
+    }
+
+    .box{
+        padding:18px;
+    }
 }
