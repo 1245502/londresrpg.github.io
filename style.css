@@ -167,3 +167,34 @@ a:hover {
         text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
     }
 }
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 15px 10px;
+
+    color: #00ff88; /* texto neon */
+    font-size: 14px;
+    font-weight: bold;
+
+    /* fundo levemente transparente pra destacar */
+    background-color: rgba(0, 0, 0, 0.7);
+    border-top: 1px solid rgba(0,255,136,0.4);
+    border-radius: 8px;
+
+    text-shadow:
+        0 0 5px #00ff88,
+        0 0 10px #00ff88,
+        0 0 20px #00ff88;
+
+    /* animação neon pulsante */
+    animation: glowFooter 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glowFooter {
+    from {
+        text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88;
+    }
+    to {
+        text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
+    }
+}
