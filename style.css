@@ -1,75 +1,71 @@
-/* Fundo do site com PNG, mais visível */
-body {
-    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("fundo.png");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    color: #39ff14;
-    font-family: Arial, sans-serif;
-    text-align: center;
+/* Reset básico */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-/* Título principal */
+/* Fundo do site */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+
+    /* Fundo com imagem + escurecimento */
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ),
+    url("image.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container principal */
+.container {
+    text-align: center;
+    padding: 40px;
+
+    background: rgba(0,0,0,0.45);
+    border-radius: 15px;
+    backdrop-filter: blur(4px);
+}
+
+/* Título */
 h1 {
-    text-shadow: 0 0 20px #39ff14;
-    margin-top: 40px;
-    font-size: 40px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
-/* Subtítulos */
-h2 {
-    text-shadow: 0 0 10px #39ff14;
+/* Texto */
+p {
+    font-size: 20px;
+    opacity: 0.9;
 }
 
-/* Caixas do conteúdo */
-.box {
-    border: 2px solid #39ff14;
-    margin: 20px auto;
-    padding: 20px;
-    width: 320px;
+/* Botão exemplo */
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 30px;
 
-    background: rgba(0,0,0,0.55);
-    box-shadow: 0 0 15px #39ff14;
+    background: #ff2a2a;
+    color: white;
+    text-decoration: none;
 
-    border-radius: 12px;
-
+    border-radius: 8px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
-/* Efeito quando passa o mouse */
-.box:hover {
-    box-shadow: 0 0 25px #39ff14;
-    transform: scale(1.03);
-}
-
-/* Links */
-a {
-    color: #39ff14;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Glow no hover */
-a:hover {
-    text-shadow: 0 0 12px #39ff14;
-}
-
-/* Texto normal */
-p {
-    font-size: 17px;
-}
-
-/* Responsivo celular */
-@media (max-width: 600px) {
-    .box {
-        width: 90%;
-    }
-
-    h1 {
-        font-size: 32px;
-    }
+.btn:hover {
+    background: #cc0000;
+    transform: scale(1.05);
 }
