@@ -1,9 +1,11 @@
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Fundo do site */
 body {
     font-family: Arial, Helvetica, sans-serif;
 
@@ -21,31 +23,10 @@ body {
     padding: 20px;
 }
 
-/* Layout geral */
+/* Container central */
 .container {
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
-}
-
-/* Grid das colunas */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-/* Caixas de conteúdo */
-.box {
-    background: rgba(0,0,0,0.55);
-    padding: 25px;
-    border-radius: 15px;
-
-    border: 1px solid rgba(0,255,136,0.4);
-
-    box-shadow:
-        0 0 10px rgba(0,255,136,0.3);
-
-    backdrop-filter: blur(5px);
 }
 
 /* Título principal */
@@ -60,6 +41,43 @@ body {
         0 0 5px #00ff88,
         0 0 15px #00ff88,
         0 0 30px #00ff88;
+}
+
+/* GRID PC */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* MOBILE = um embaixo do outro */
+@media (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Cards */
+.box {
+    background: rgba(0,0,0,0.55);
+    padding: 25px;
+    border-radius: 15px;
+
+    border: 1px solid rgba(0,255,136,0.4);
+
+    box-shadow:
+        0 0 10px rgba(0,255,136,0.3);
+
+    backdrop-filter: blur(5px);
+
+    transition: 0.3s;
+}
+
+/* Hover gamer */
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow:
+        0 0 20px rgba(0,255,136,0.5);
 }
 
 /* Sub títulos */
@@ -92,6 +110,8 @@ a {
 a:hover {
     text-shadow: 0 0 10px #00ff88;
 }
+
+/* Redes sociais */
 .social-links {
     margin-top: 15px;
     display: flex;
