@@ -1,17 +1,15 @@
-/* RESET */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, sans-serif;
 }
 
-/* FUNDO COM IMAGEM */
 body{
     min-height:100vh;
 
     background:
-    linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.90)),
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
     url("Image.jpg");
 
     background-size:cover;
@@ -22,32 +20,27 @@ body{
     color:white;
 }
 
-/* TITULO */
 .titulo{
     text-align:center;
     font-size:32px;
-    margin-top:30px;
-    margin-bottom:30px;
+    margin:30px 0;
 
     color:#00ff88;
 
     text-shadow:
     0 0 5px #00ff88,
-    0 0 10px #00ff88,
-    0 0 20px #00ff88;
+    0 0 15px #00ff88,
+    0 0 25px #00ff88;
 }
 
-/* CONTAINER (UM EMBAIXO DO OUTRO) */
 .container{
     display:flex;
-    flex-direction:column; /* ESSA LINHA FAZ FICAR UM EMBAIXO DO OUTRO */
+    flex-direction:column;
     align-items:center;
     gap:25px;
-
     padding:20px;
 }
 
-/* CARDS */
 .card{
     width:90%;
     max-width:420px;
@@ -61,11 +54,10 @@ body{
     border:1px solid rgba(0,255,136,0.5);
 
     box-shadow:
-    0 0 10px rgba(0,255,136,0.5),
+    0 0 15px rgba(0,255,136,0.4),
     inset 0 0 10px rgba(0,255,136,0.2);
 }
 
-/* TITULO CARD */
 .card h2{
     color:#00ff88;
     margin-bottom:10px;
@@ -75,19 +67,16 @@ body{
     0 0 10px #00ff88;
 }
 
-/* TEXTO */
 .card p{
     margin-bottom:10px;
     line-height:1.5;
 }
 
-/* LISTA */
 .card ul{
     margin-left:20px;
     margin-bottom:10px;
 }
 
-/* LINKS */
 .link{
     display:flex;
     align-items:center;
@@ -101,7 +90,6 @@ body{
     text-shadow:0 0 5px #00ff88;
 }
 
-/* TAMANHO DOS ICONES (ARRUMADO AQUI) */
 .link i{
-    font-size:20px; /* ANTES ESTAVA GIGANTE */
+    font-size:20px;
 }
