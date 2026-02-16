@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 
-/* FUNDO DO SITE */
+/* FUNDO */
 body {
     font-family: Arial, sans-serif;
     background: url("image.jpg") no-repeat center center fixed;
     background-size: cover;
-    color: #00ff88;
+    color: #eafff5;
 }
 
-/* CAMADA ESCURA POR CIMA DO FUNDO */
+/* CAMADA ESCURA */
 body::before {
     content: "";
     position: fixed;
@@ -57,7 +57,7 @@ nav a:hover {
     text-shadow: 0 0 8px #00ff88;
 }
 
-/* SEÇÕES */
+/* ===== SEÇÕES PRINCIPAIS ===== */
 section {
     background: rgba(0,0,0,0.80);
     margin: 30px;
@@ -67,15 +67,18 @@ section {
     box-shadow: 0 0 15px rgba(0,255,136,0.25);
 }
 
-/* TITULOS */
-h2 {
-    color: #00ff88;
+/* 🔥 TITULOS DAS PARTES (NEON GARANTIDO) */
+section h2 {
+    color: #00ff88 !important;
+    text-shadow: 
+        0 0 5px #00ff88,
+        0 0 10px #00ff88,
+        0 0 20px #00ff88;
     margin-bottom: 15px;
-    text-shadow: 0 0 6px #00ff88;
 }
 
-/* TEXTO */
-p {
+/* TEXTO NORMAL */
+section p {
     color: #eafff5;
     line-height: 1.6;
 }
@@ -103,7 +106,7 @@ footer {
     border-top: 3px solid black;
 }
 
-/* ICONES REDES SOCIAIS */
+/* ICONES */
 .social img {
     width: 35px;
     margin: 10px;
