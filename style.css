@@ -1,17 +1,15 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fundo do site */
 body {
     font-family: Arial, Helvetica, sans-serif;
 
     background: linear-gradient(
-        rgba(0,0,0,0.55),
-        rgba(0,0,0,0.55)
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
     ),
     url("image.jpg");
 
@@ -20,75 +18,77 @@ body {
     background-repeat: no-repeat;
 
     min-height: 100vh;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
 }
 
-/* Container */
+/* Layout geral */
 .container {
-    text-align: center;
-    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
 
-    background: rgba(0,0,0,0.45);
+/* Grid das colunas */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Caixas de conteúdo */
+.box {
+    background: rgba(0,0,0,0.55);
+    padding: 25px;
     border-radius: 15px;
-    backdrop-filter: blur(4px);
+
+    border: 1px solid rgba(0,255,136,0.4);
+
+    box-shadow:
+        0 0 10px rgba(0,255,136,0.3);
+
+    backdrop-filter: blur(5px);
 }
 
-/* Título Verde Neon */
-h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
+/* Título principal */
+.titulo {
+    text-align: center;
+    font-size: 42px;
+    margin-bottom: 30px;
 
     color: #00ff88;
 
     text-shadow:
         0 0 5px #00ff88,
-        0 0 10px #00ff88,
-        0 0 20px #00ff88,
-        0 0 40px #00ff88;
+        0 0 15px #00ff88,
+        0 0 30px #00ff88;
 }
 
-/* Texto Neon mais suave */
-p {
-    font-size: 20px;
-
-    color: #66ffcc;
-
-    text-shadow:
-        0 0 5px #00ff88,
-        0 0 10px #00ff88;
-}
-
-/* Botão Neon */
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 12px 30px;
-
-    background: transparent;
+/* Sub títulos */
+h2 {
     color: #00ff88;
-    border: 2px solid #00ff88;
+    margin-bottom: 15px;
 
+    text-shadow: 0 0 10px #00ff88;
+}
+
+/* Textos */
+p, li {
+    color: #d0ffe9;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Lista */
+ul {
+    margin-left: 20px;
+}
+
+/* Links */
+a {
+    color: #00ff88;
     text-decoration: none;
-    border-radius: 8px;
     font-weight: bold;
-
-    box-shadow:
-        0 0 5px #00ff88,
-        0 0 15px #00ff88;
-
-    transition: 0.3s;
 }
 
-.btn:hover {
-    background: #00ff88;
-    color: black;
-
-    box-shadow:
-        0 0 20px #00ff88,
-        0 0 40px #00ff88;
-
-    transform: scale(1.05);
+a:hover {
+    text-shadow: 0 0 10px #00ff88;
 }
