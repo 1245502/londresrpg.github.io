@@ -27,15 +27,35 @@ body {
     margin: auto;
 }
 
-/* 🔥 AGORA UMA PARTE EMBAIXO DA OUTRA */
+/* 🔥 GRID FORÇADO UMA COLUNA */
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 25px;
 }
 
+/* 🔥 GARANTE MOBILE */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Caixas de conteúdo */
 .box {
+    width: 100%;
     background: rgba(0,0,0,0.55);
     padding: 25px;
     border-radius: 15px;
