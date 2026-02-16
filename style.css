@@ -1,30 +1,48 @@
+/* Fundo do site */
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("imagem.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("imagem.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
     color: #39ff14;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
+    padding: 0;
 }
 
 /* Título principal */
 h1 {
     text-shadow: 0 0 20px #39ff14;
     margin-top: 40px;
+    font-size: 40px;
 }
 
-/* Caixas do site */
+/* Subtítulos */
+h2 {
+    text-shadow: 0 0 10px #39ff14;
+}
+
+/* Caixas do conteúdo */
 .box {
     border: 2px solid #39ff14;
     margin: 20px auto;
     padding: 20px;
-    width: 300px;
-    background: rgba(0,0,0,0.6);
+    width: 320px;
+
+    background: rgba(0,0,0,0.65);
     box-shadow: 0 0 15px #39ff14;
-    border-radius: 10px;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+/* Efeito quando passa o mouse */
+.box:hover {
+    box-shadow: 0 0 25px #39ff14;
+    transform: scale(1.03);
 }
 
 /* Links */
@@ -32,8 +50,26 @@ a {
     color: #39ff14;
     text-decoration: none;
     font-weight: bold;
+    font-size: 18px;
 }
 
+/* Glow no hover */
 a:hover {
-    text-shadow: 0 0 10px #39ff14;
+    text-shadow: 0 0 12px #39ff14;
+}
+
+/* Texto normal */
+p {
+    font-size: 17px;
+}
+
+/* Responsivo celular */
+@media (max-width: 600px) {
+    .box {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
 }
