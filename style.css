@@ -92,3 +92,23 @@ a {
 a:hover {
     text-shadow: 0 0 10px #00ff88;
 }
+.social-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #00ff88;
+    font-weight: bold;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
