@@ -1,6 +1,6 @@
-/* Fundo do site */
+/* Fundo do site com PNG, mais visível */
 body {
-    background-image: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url("imagem.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("fundo.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -31,7 +31,7 @@ h2 {
     padding: 20px;
     width: 320px;
 
-    background: rgba(0,0,0,0.65);
+    background: rgba(0,0,0,0.55);
     box-shadow: 0 0 15px #39ff14;
 
     border-radius: 12px;
