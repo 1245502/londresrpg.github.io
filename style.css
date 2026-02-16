@@ -5,15 +5,15 @@
     box-sizing: border-box;
 }
 
-/* FUNDO */
+/* FUNDO DO SITE */
 body {
     font-family: Arial, sans-serif;
     background: url("image.jpg") no-repeat center center fixed;
     background-size: cover;
-    color: #eafff5;
+    color: #00ff88;
 }
 
-/* CAMADA ESCURA */
+/* CAMADA ESCURA POR CIMA DO FUNDO */
 body::before {
     content: "";
     position: fixed;
@@ -30,7 +30,7 @@ header {
     background: rgba(0,0,0,0.85);
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid black; /* 🔥 BORDA PRETA */
 }
 
 header h1 {
@@ -43,7 +43,7 @@ nav {
     background: rgba(0,0,0,0.9);
     padding: 12px;
     text-align: center;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid black; /* 🔥 BORDA PRETA */
 }
 
 nav a {
@@ -57,28 +57,28 @@ nav a:hover {
     text-shadow: 0 0 8px #00ff88;
 }
 
-/* ===== SEÇÕES PRINCIPAIS ===== */
+/* SEÇÕES */
 section {
     background: rgba(0,0,0,0.80);
     margin: 30px;
     padding: 25px;
     border-radius: 12px;
+
+    /* 🔥 BORDA PRETA SEPARANDO */
     border: 3px solid black;
+
     box-shadow: 0 0 15px rgba(0,255,136,0.25);
 }
 
-/* 🔥 TITULOS DAS PARTES (NEON GARANTIDO) */
-section h2 {
-    color: #00ff88 !important;
-    text-shadow: 
-        0 0 5px #00ff88,
-        0 0 10px #00ff88,
-        0 0 20px #00ff88;
+/* TITULOS */
+h2 {
+    color: #00ff88;
     margin-bottom: 15px;
+    text-shadow: 0 0 6px #00ff88;
 }
 
-/* TEXTO NORMAL */
-section p {
+/* TEXTO */
+p {
     color: #eafff5;
     line-height: 1.6;
 }
@@ -103,10 +103,10 @@ footer {
     background: rgba(0,0,0,0.9);
     text-align: center;
     padding: 15px;
-    border-top: 3px solid black;
+    border-top: 3px solid black; /* 🔥 BORDA PRETA */
 }
 
-/* ICONES */
+/* ICONES REDES SOCIAIS */
 .social img {
     width: 35px;
     margin: 10px;
