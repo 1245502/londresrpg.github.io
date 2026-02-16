@@ -1,95 +1,103 @@
+/* RESET */
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
+/* FUNDO DO SITE */
 body{
-    min-height:100vh;
-
+    color:white;
     background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
     url("Image.jpg");
-
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;
     background-attachment:fixed;
-
-    color:white;
+    min-height:100vh;
 }
 
-.titulo{
+/* TITULO */
+h1{
     text-align:center;
-    font-size:32px;
-    margin:30px 0;
-
-    color:#00ff88;
-
+    margin-top:25px;
+    margin-bottom:25px;
+    color:#00ff9c;
     text-shadow:
-    0 0 5px #00ff88,
-    0 0 15px #00ff88,
-    0 0 25px #00ff88;
+    0 0 5px #00ff9c,
+    0 0 15px #00ff9c,
+    0 0 30px #00ff9c;
 }
 
+/* CONTAINER PRINCIPAL */
 .container{
     display:flex;
-    flex-direction:column;
+    flex-direction:column; /* UM EMBAIXO DO OUTRO */
     align-items:center;
     gap:25px;
     padding:20px;
 }
 
+/* CARDS */
 .card{
     width:90%;
-    max-width:420px;
+    max-width:500px;
 
     background:rgba(0,0,0,0.65);
-    backdrop-filter: blur(6px);
-
     border-radius:15px;
     padding:20px;
 
-    border:1px solid rgba(0,255,136,0.5);
+    border:1px solid rgba(0,255,156,0.5);
 
     box-shadow:
-    0 0 15px rgba(0,255,136,0.4),
-    inset 0 0 10px rgba(0,255,136,0.2);
+    0 0 10px rgba(0,255,156,0.5),
+    inset 0 0 10px rgba(0,255,156,0.3);
+
+    backdrop-filter:blur(6px);
 }
 
+/* TITULO CARD */
 .card h2{
-    color:#00ff88;
-    margin-bottom:10px;
-
-    text-shadow:
-    0 0 5px #00ff88,
-    0 0 10px #00ff88;
+    color:#00ff9c;
+    margin-bottom:15px;
+    text-shadow:0 0 8px #00ff9c;
 }
 
+/* TEXTO */
 .card p{
+    line-height:1.6;
     margin-bottom:10px;
-    line-height:1.5;
 }
 
+/* LISTA */
 .card ul{
     margin-left:20px;
-    margin-bottom:10px;
+    margin-top:10px;
 }
 
-.link{
+.card li{
+    margin-bottom:6px;
+}
+
+/* LINKS */
+.card a{
     display:flex;
     align-items:center;
     gap:8px;
-
+    color:#00ff9c;
     text-decoration:none;
-    color:#00ff88;
-
-    margin-top:10px;
-
-    text-shadow:0 0 5px #00ff88;
+    margin-top:8px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-.link i{
-    font-size:20px;
+.card a:hover{
+    text-shadow:0 0 10px #00ff9c;
+}
+
+/* ICONES */
+.icon{
+    width:24px;
+    height:24px;
 }
