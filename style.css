@@ -1,23 +1,39 @@
 body {
-    background: black;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
     color: #39ff14;
     font-family: Arial;
     text-align: center;
+    margin: 0;
 }
 
+/* Título principal */
 h1 {
-    text-shadow: 0 0 15px #39ff14;
+    text-shadow: 0 0 20px #39ff14;
+    margin-top: 40px;
 }
 
-button {
-    background: transparent;
+/* Caixas do site */
+.box {
     border: 2px solid #39ff14;
-    color: #39ff14;
-    padding: 10px 20px;
-    cursor: pointer;
+    margin: 20px auto;
+    padding: 20px;
+    width: 300px;
+    background: rgba(0,0,0,0.6);
+    box-shadow: 0 0 15px #39ff14;
+    border-radius: 10px;
 }
 
-button:hover {
-    background: #39ff14;
-    color: black;
+/* Links */
+a {
+    color: #39ff14;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #39ff14;
 }
