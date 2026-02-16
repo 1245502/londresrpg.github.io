@@ -30,7 +30,7 @@ header {
     background: rgba(0,0,0,0.85);
     padding: 20px;
     text-align: center;
-    border-bottom: 3px solid black; /* 🔥 BORDA PRETA */
+    border-bottom: 3px solid black;
 }
 
 header h1 {
@@ -43,7 +43,7 @@ nav {
     background: rgba(0,0,0,0.9);
     padding: 12px;
     text-align: center;
-    border-bottom: 3px solid black; /* 🔥 BORDA PRETA */
+    border-bottom: 3px solid black;
 }
 
 nav a {
@@ -63,10 +63,7 @@ section {
     margin: 30px;
     padding: 25px;
     border-radius: 12px;
-
-    /* 🔥 BORDA PRETA SEPARANDO */
     border: 3px solid black;
-
     box-shadow: 0 0 15px rgba(0,255,136,0.25);
 }
 
@@ -103,7 +100,7 @@ footer {
     background: rgba(0,0,0,0.9);
     text-align: center;
     padding: 15px;
-    border-top: 3px solid black; /* 🔥 BORDA PRETA */
+    border-top: 3px solid black;
 }
 
 /* ICONES REDES SOCIAIS */
