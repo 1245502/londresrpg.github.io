@@ -116,7 +116,7 @@ a:hover {
     height: 22px;
 }
 
-/* 🔥 AJUSTES MOBILE EXTRA */
+/* Ajustes mobile */
 @media (max-width: 480px) {
 
     body {
@@ -128,55 +128,17 @@ a:hover {
     }
 
 }
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 20px;
 
-    color: #00ff88;
-    font-size: 14px;
-
-    border-top: 1px solid rgba(0,255,136,0.3);
-
-    text-shadow: 0 0 5px #00ff88;
-}
-.footer {
-    text-align: center;
-    margin-top: 40px;
-    padding: 15px;
-
-    color: #00ff88;
-    font-size: 14px;
-    font-weight: bold;
-
-    border-top: 1px solid rgba(0,255,136,0.3);
-    text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88;
-
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 8px;
-
-    /* animação neon simples */
-    animation: glowFooter 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes glowFooter {
-    from {
-        text-shadow: 0 0 5px #00ff88, 0 0 10px #00ff88, 0 0 20px #00ff88;
-    }
-    to {
-        text-shadow: 0 0 10px #00ff88, 0 0 20px #00ff88, 0 0 30px #00ff88;
-    }
-}
+/* Rodapé */
 .footer {
     text-align: center;
     margin-top: 40px;
     padding: 15px 10px;
 
-    color: #00ff88; /* texto neon */
+    color: #00ff88;
     font-size: 14px;
     font-weight: bold;
 
-    /* fundo levemente transparente pra destacar */
     background-color: rgba(0, 0, 0, 0.7);
     border-top: 1px solid rgba(0,255,136,0.4);
     border-radius: 8px;
@@ -186,7 +148,6 @@ a:hover {
         0 0 10px #00ff88,
         0 0 20px #00ff88;
 
-    /* animação neon pulsante */
     animation: glowFooter 1.5s ease-in-out infinite alternate;
 }
 
